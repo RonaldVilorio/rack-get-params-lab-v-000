@@ -30,10 +30,10 @@ class Application
   end
 
   def cart
-    if req.path.match(/items/)
+    if req.path.match(/cart/)
       @@items.each do |item|
         resp.write "#{item}\n"
       end
-    
+
   end
 end
