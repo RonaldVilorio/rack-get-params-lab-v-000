@@ -29,7 +29,7 @@ class Application
     end
   end
 
-  def cart
+  def cart(env)
     if req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}\n"
