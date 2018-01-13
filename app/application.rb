@@ -22,7 +22,7 @@ class Application
       end
     elsif req.path.match(/add/)
       @@items.each do |item|
-        @@cart.push(item)
+        @@cart << item
         "added #{item}"
       end
 
