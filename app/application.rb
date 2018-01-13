@@ -31,7 +31,8 @@ class Application
     if @@items.include?(search_term)
       return "#{search_term} is one of our items"
     elsif req.path.match(/add/)
-      
+      @@items.include?(search_term)
+
     else
       return "Couldn't find #{search_term}"
     end
