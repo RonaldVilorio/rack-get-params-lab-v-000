@@ -33,6 +33,8 @@ class Application
     if req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}\n"
+      else
+        resp.write "Your cart is empty"
       end
   end
 end
