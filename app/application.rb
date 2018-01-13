@@ -23,6 +23,7 @@ class Application
     elsif req.path.match(/add/)
       @@items.each do |item|
         @@cart << item if item
+        "added #{item}"
       end
 
     else
